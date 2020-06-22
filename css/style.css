@@ -1,0 +1,42 @@
+.sidenav {
+    width: 130px;
+    position: fixed;
+    z-index: 1;
+    top: 60px;
+    left: 10px;
+    background: #eee;
+    overflow-x: hidden;
+    padding: 8px 0;
+  }
+  
+  .sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 25px;
+    color: #76BA1B;
+    display: block;
+  }
+  
+  .sidenav a:hover {
+    color: #ffffff;
+    background-color: #76BA1B;
+}
+
+div.card-columns{
+    margin-left: 10em;
+}
+
+li.list-group-item{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+
+/* @media only screen and (min-width: 900px) {
+    div[class = 'card border-primary mb-3']{
+        width: 225.725px !important;
+    }
+  }
+
+   */
