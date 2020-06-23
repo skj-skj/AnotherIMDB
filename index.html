@@ -9,18 +9,16 @@
 </head>
 <body>
     <nav class="navbar navbar-light bg-light">
-        <form class="form-inline">
+        <form class="form-inline" onSubmit = "return false;">
             <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            <button class="btn btn-outline-success my-2 my-sm-0" id="search">Search</button>
         </form>
     </nav>
 
     <!-- Side navigation -->
 <div class="sidenav">
-    <a href="./index.html">Popular Movies</a>
-    <a href="#">Services</a>
-    <a href="#">Clients</a>
-    <a href="#">Contact</a>
+    <a href="./index.html" id="popularMovies">Popular Movies</a>
+    <a href="#" id="popularTvShows">Popular TV Show</a>
 </div>
 
 <!-- Main Body -->
@@ -28,6 +26,7 @@
     <div class="container-fluid mt-4">
         <div class="row justify-content-center">
             <div class="card-columns">
+                <!-- Here Data will be added using DOM Manipulation -->
             </div>
         </div>
     </div>
