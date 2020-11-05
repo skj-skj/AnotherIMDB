@@ -95,9 +95,9 @@ window.onload = function(){
 
     // Popular Movies - Default
     {
-        popularDetails(`https://api.themoviedb.org/3/movie/popular?api_key=${API_KEY}&language=en-US&page=`,'Movie',1);
-        popularDetails(`https://api.themoviedb.org/3/movie/popular?api_key=${API_KEY}&language=en-US&page=`,'Movie',2);
-        popularDetails(`https://api.themoviedb.org/3/movie/popular?api_key=${API_KEY}&language=en-US&page=`,'Movie',3);
+        for(let i=1;i<=5;i++){
+            popularDetails(`https://api.themoviedb.org/3/movie/popular?api_key=${API_KEY}&language=en-US&page=`,'Movie',i);
+        }
     }
 
     // Popular Tv Show Functionality
@@ -106,10 +106,10 @@ window.onload = function(){
     popularTvShowsEvent.addEventListener('click', () =>{
         let cardBlock = document.querySelector('div.card-columns');
         cardBlock.innerHTML = '';
-        popularDetails(`https://api.themoviedb.org/3/tv/popular?api_key=${API_KEY}&language=en-US&page=`,'Tv Show',1)
-        popularDetails(`https://api.themoviedb.org/3/tv/popular?api_key=${API_KEY}&language=en-US&page=`,'Tv Show',2)
-        popularDetails(`https://api.themoviedb.org/3/tv/popular?api_key=${API_KEY}&language=en-US&page=`,'Tv Show',3)
+        for(let i=1;i<=5;i++){
+        popularDetails(`https://api.themoviedb.org/3/tv/popular?api_key=${API_KEY}&language=en-US&page=`,'Tv Show',i)
 
+        }
     })
 
     // Search Functionality
@@ -120,8 +120,8 @@ window.onload = function(){
         let cardBlock = document.querySelector('div.card-columns');
         cardBlock.innerHTML = '';
         searchTerm = searchBar.querySelector('input').value;
-        search(searchTerm,1);
-        search(searchTerm,2);
-        search(searchTerm,3);
+        for(let i=1;i<=5;i++){
+            search(searchTerm,i);
+        }
     })
 }
